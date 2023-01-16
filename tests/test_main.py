@@ -34,7 +34,7 @@ class TestReturnYa(TestCase):
 
 class TestReturnFolder(TestCase):
     def test_folder(self):
-        res = YandexDisk('y0_AgAAAAADtb4EAADLWwAAAADRTNTYskAI1MKzQx-Ba_W_lz5GFJx1LTk') 
+        res = YandexDisk('') # введите токен я ЯндексДиска
         res.create_folder('Testing')
         set = res.get_folder('/Testing')
         self.assertEqual(set.status_code, 200)

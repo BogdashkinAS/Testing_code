@@ -21,7 +21,7 @@ def test_ya():
 
 @pytest.mark.parametrize('set', [201, 400, 401, 403, 404, 406, 409, 413, 423, 429, 503, 507])
 def test_folder(set):
-    res = YandexDisk('') # введите токен я ЯндексДиска
+    res = YandexDisk('') # введите токен c ЯндексДиска
     res.create_folder('Testing')
     set = res.get_folder('/Testing')
     assert set.status_code == 200
